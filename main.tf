@@ -20,9 +20,9 @@ output "other" {
   value = random_string.other.result
 }
 
-# Uncomment if needed
-resource "null_resource" "echo_dummyy" {
-  provisioner local-exec {
-    command = "echo HelloWorld"
-  }
-}
+# # Uncomment if needed
+# resource "null_resource" "echo_dummyy" {
+#   provisioner local-exec {
+#     command = "echo HelloWorld"
+#   }
+# }
