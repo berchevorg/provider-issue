@@ -1,3 +1,9 @@
+terraform {
+  required_providers {
+    null = {}
+  }
+}
+
 module "foo" {
   source = "./foo"
 }
