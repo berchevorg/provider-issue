@@ -1,8 +1,8 @@
-terraform {
-  required_providers {
-    null = {}
-  }
-}
+# terraform {
+#   required_providers {
+#     null = {}
+#   }
+# }
 
 module "foo" {
   source = "./foo"
