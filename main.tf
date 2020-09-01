@@ -4,21 +4,21 @@
 #   }
 # }
 
-# terraform {
-#   required_version = "0.13.1"
-#   required_providers {
-#     random = {
-#       source  = "hashicorp/random"
-#       version = "2.3.0"
-#     }
+ terraform {
+   required_version = "0.13.1"
+   required_providers {
+     random = {
+       source  = "hashicorp/random"
+       version = "2.3.0"
+     }
     
 # #     null = {
 # #       source  = "hashicorp/null"
 # #       version = "2.1.2"
 # #     }
     
-#    }
-# }
+    }
+ }
 
 module "foo" {
   source = "./foo"
