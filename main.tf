@@ -11,7 +11,12 @@ terraform {
       source  = "hashicorp/random"
       version = "2.3.0"
     }
-
+    
+    random = {
+      source  = "hashicorp/null"
+      version = "2.1.2"
+    }
+    
   }
 }
 
@@ -37,9 +42,9 @@ output "other" {
   value = random_string.other.result
 }
 
-# # Uncomment if needed
-# resource "null_resource" "echo_dummyy" {
-#   provisioner local-exec {
-#     command = "echo HelloWorld"
-#   }
-# }
+# Uncomment if needed
+resource "null_resource" "echo_dummyy" {
+  provisioner local-exec {
+    command = "echo HelloWorld"
+  }
+}
