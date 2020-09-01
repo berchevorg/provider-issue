@@ -13,6 +13,7 @@ terraform {
     }
 
   }
+}
 
 module "foo" {
   source = "./foo"
