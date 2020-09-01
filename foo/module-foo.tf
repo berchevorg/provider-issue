@@ -3,7 +3,7 @@ module "bar" {
 }
 
 resource "random_string" "that" {
-  length  = 4 4 4 4 
+  length  = 4 
 }
 
 output "bar" {
